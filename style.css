@@ -7,6 +7,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -27,7 +28,7 @@ header{
     width: 100%;
     padding: 10px 20px;
     min-height: 60px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .logo{
@@ -66,10 +67,18 @@ header{
 #hero{
     width: 100%;
     height: 100vh;
-    background-image: url("hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    min-height: 100vh;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+
+#hero img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -138,9 +147,11 @@ section{
 #map{
     padding: 0;
     min-height: auto;
+    display: block;
 }
 
 #map iframe{
+    display: block;
     width: 100%;
     height: 100vh;
     border: 0;
@@ -235,4 +246,41 @@ footer{
     color: white;
     padding: 20px 10px;
     text-align: center;
+}
+
+footer a{
+    color: white;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .logo{
+        font-size: 2.4rem;
+    }
+
+    .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar a:link,
+    .navbar a:visited{
+        font-size: 1.4rem;
+        padding: 8px;
+    }
+
+    #gallery img{
+        max-width: 90%;
+        height: auto;
+    }
+
 }
