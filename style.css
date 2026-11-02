@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +30,6 @@ header{
     z-index: 1;
 }
 
-
 .logo{
     font-size: 3rem;
     color: white;
@@ -38,13 +38,11 @@ header{
     font-weight: 700;
 }
 
-
 .navbar ul{
     display: flex;
     list-style: none;
     gap: 5px;
 }
-
 
 .navbar a:link,
 .navbar a:visited{
@@ -56,7 +54,6 @@ header{
     transition: background-color 0.3s ease;
 }
 
-
 .navbar a:hover,
 .navbar a:active{
     color: white;
@@ -67,7 +64,7 @@ header{
 /* IMAGEM PRINCIPAL */
 
 #hero{
-    background-image: url(../img/hero.jpg);
+    background-image: url("hero.jpg");
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -102,7 +99,6 @@ section{
     background-color: #d5e6c4;
 }
 
-
 #about p{
     font-size: 2rem;
     text-align: center;
@@ -120,7 +116,6 @@ section{
     text-align: center;
 }
 
-
 #gallery img{
     width: 300px;
     height: 200px;
@@ -133,7 +128,6 @@ section{
     transition: transform 0.3s ease;
 }
 
-
 #gallery img:hover{
     transform: scale(1.05);
 }
@@ -145,7 +139,6 @@ section{
     padding: 0;
     min-height: auto;
 }
-
 
 #map iframe{
     width: 100%;
@@ -160,13 +153,11 @@ section{
     background-color: #d5e6c4;
 }
 
-
 .cards{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 
 .card{
     background-color: white;
@@ -178,13 +169,11 @@ section{
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
 }
 
-
 .card h2{
     text-align: center;
     margin-bottom: 20px;
     color: #245c35;
 }
-
 
 .card p{
     text-align: center;
@@ -199,7 +188,6 @@ section{
     align-items: center;
 }
 
-
 #contact form{
     width: 100%;
     max-width: 400px;
@@ -208,13 +196,11 @@ section{
     text-align: left;
 }
 
-
 #contact label{
     font-size: 1.6rem;
     margin: 5px;
     font-weight: bold;
 }
-
 
 #contact input,
 #contact textarea{
@@ -226,7 +212,6 @@ section{
     border: none;
 }
 
-
 #contact button{
     background-color: #245c35;
     color: white;
@@ -237,7 +222,6 @@ section{
     cursor: pointer;
     width: 100%;
 }
-
 
 #contact button:hover{
     background-color: #123d20;
